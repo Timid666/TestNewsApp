@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailViewController" customModule="TestNewsApp" customModuleProvider="target">
+            <connections>
+                <outlet property="newsLabel" destination="MvW-o9-Zcq" id="kAS-ri-npu"/>
+                <outlet property="newsTitleLabel" destination="oIr-qQ-8GG" id="7fC-xk-cgV"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hH-fx-eXE">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oIr-qQ-8GG">
+                            <rect key="frame" x="16" y="16" width="382" height="24"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MvW-o9-Zcq">
+                            <rect key="frame" x="16" y="61.5" width="382" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="oIr-qQ-8GG" firstAttribute="leading" secondItem="0hH-fx-eXE" secondAttribute="leading" constant="16" id="08k-Ww-KPp"/>
+                        <constraint firstItem="oIr-qQ-8GG" firstAttribute="width" secondItem="0hH-fx-eXE" secondAttribute="width" constant="-32" id="1D0-6p-W1C"/>
+                        <constraint firstAttribute="bottom" secondItem="MvW-o9-Zcq" secondAttribute="bottom" id="975-fE-azu"/>
+                        <constraint firstItem="MvW-o9-Zcq" firstAttribute="leading" secondItem="0hH-fx-eXE" secondAttribute="leading" constant="16" id="9Vs-jI-42j"/>
+                        <constraint firstItem="MvW-o9-Zcq" firstAttribute="top" secondItem="oIr-qQ-8GG" secondAttribute="bottom" constant="21.5" id="EAe-A3-jDO"/>
+                        <constraint firstAttribute="trailing" secondItem="MvW-o9-Zcq" secondAttribute="trailing" constant="16" id="Hsh-YK-uPQ"/>
+                        <constraint firstItem="oIr-qQ-8GG" firstAttribute="top" secondItem="0hH-fx-eXE" secondAttribute="top" constant="16" id="es1-Fw-ILY"/>
+                        <constraint firstAttribute="trailing" secondItem="oIr-qQ-8GG" secondAttribute="trailing" constant="16" id="xl2-nw-vYj"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="0hH-fx-eXE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Aq8-9k-ebh"/>
+                <constraint firstItem="0hH-fx-eXE" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Chm-f2-COV"/>
+                <constraint firstAttribute="trailing" secondItem="0hH-fx-eXE" secondAttribute="trailing" id="KHM-kN-5OE"/>
+                <constraint firstItem="0hH-fx-eXE" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="yWg-bi-iE1"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="124.55357142857142"/>
+        </view>
+    </objects>
+</document>
